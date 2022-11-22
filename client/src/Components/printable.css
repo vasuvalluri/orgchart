@@ -1,0 +1,93 @@
+#printable-chart-container {
+  font-family: Arial;
+  height: 83vh;
+  border: 6px #aaa;
+  border-radius: 5px;
+  overflow: auto;
+  text-align: center;
+  padding: 10px 10px 10px 10px;
+}
+
+#printable-chart-container .leaf {
+  /*background-color: red;*/
+  flex-wrap: wrap;
+  margin: 0 0 0 0 !important;
+  justify-content: space-evenly;
+}
+
+#printable-chart-container .orgchart>ul>li>ul li>.node::before {
+  height: 14px !important;
+}
+
+#printable-chart-container .orgchart .node.matched {
+  background-color: rgba(238, 217, 54, 0.5);
+}
+
+#printable-chart-container .orgchart .node {
+  width: 342px !important;
+}
+
+#printable-chart-container .orgchart .node .content {
+  box-sizing: border-box;
+  padding: 2px;
+  height: 143px !important;
+  font-size: 0.75rem !important;
+  border: 2px solid rgba(217, 83, 79, 0.8) !important;
+  border-radius: 0 0 4px 4px;
+  text-align: left !important;
+  background-color: #2596be !important;
+  color: #fff !important;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+#printable-chart-container .orgchart .node .title {
+  width: auto !important;
+  text-align: left !important;
+  font-size: 1rem !important;
+  height: 50px !important;
+}
+
+#printable-chart-container .orgchart .node .title .symbol {
+  margin-right: 20px !important;
+  margin-top: 16px !important;
+  margin-left: 4px !important;
+}
+
+#printable-chart-container .orgchart .node .content {
+  height: auto !important;
+}
+
+#printable-chart-container .orgchart .employee .title {
+  background-color: #006699 !important;
+}
+
+#printable-chart-container .orgchart .employee .content {
+  border-color: #006699 !important;
+}
+
+#printable-chart-container .orgchart .contractor .title {
+  background-color: rgb(214, 142, 9) !important;
+}
+
+#printable-chart-container .orgchart .contractor .content {
+  border-color: chocolate !important;
+  background-color: chocolate !important;
+}
+
+#printable-chart-container .orgchart .vacant .title {
+  background-color: gray !important;
+}
+
+#printable-chart-container .orgchart .vacant .content {
+  background-color: #9f9f9f !important;
+  border-color: #9f9f9f !important;
+}
+
+#printable-chart-container .imgcircle {
+  float: right;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid black;
+}

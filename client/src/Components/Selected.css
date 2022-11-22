@@ -1,0 +1,20 @@
+#chart-container .leaf {
+  /*background-color: red;*/
+  flex-wrap: wrap;
+  margin: 0 0 0 0 !important;
+  justify-content: space-evenly;
+}
+.orgchart .leaf .hierarchy::before {
+  border-top: 0px !important;
+  height: 16px !important;
+  border-top: 2px solid rgba(217, 83, 79, 0.8);
+}
+
+.orgchart .leaf .node::after {
+  height: 16px !important;
+  bottom: -13px !important;
+}
+.orgchart .leaf > ul > li > ul li > .node::before {
+  height: 31px !important;
+  top: -26px;
+}

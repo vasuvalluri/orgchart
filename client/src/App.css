@@ -1,0 +1,306 @@
+.orgchart {
+  background-image: none !important;
+  height: 100% !important;
+}
+.oci-chevron-right::before {
+  border-width: 0 0.35rem 0.35rem 0 !important;
+  border-color: black !important;
+  width: 1.15rem !important;
+  height: 1.15rem !important;
+}
+
+.orgchart .node .verticalEdge::before {
+  left: calc(50% - 1rem) !important;
+}
+.orgchart .node.focused {
+  background-color: green !important;
+}
+.oci-chevron-up::before {
+  border-width: 0 0.35rem 0.35rem 0 !important;
+  border-color: black !important;
+  width: 1.15rem !important;
+  height: 1.15rem !important;
+}
+.oci-chevron-down::before {
+  border-width: 0 0.35rem 0.35rem 0 !important;
+  border-color: black !important;
+  width: 1.15rem !important;
+  height: 1.15rem !important;
+}
+.oci-chevron-left::before {
+  border-width: 0 0.35rem 0.35rem 0 !important;
+  border-color: black !important;
+  width: 1.15rem !important;
+  height: 1.15rem !important;
+}
+
+.fixed-top-2 {
+  margin-top: 105px;
+  z-index: 1 !important;
+}
+
+#navSelect {
+  width: 800px;
+}
+
+body {
+  padding-top: 105px;
+}
+
+.floatLeft {
+  float: left;
+}
+.floatRight {
+  float: right;
+}
+.contentStyle {
+  height: 200px;
+  background: #9f9f9f;
+  padding: 20px 20px 20px 20px;
+}
+.site-page-header {
+  border: 1px solid rgb(235, 237.24);
+  color: #fff;
+}
+.navFlex {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  margin-left: 20px;
+}
+
+.dropdown-menu {
+  z-index: 99998;
+}
+
+.navFlex .right {
+  margin-left: auto;
+}
+
+.navFlex .row {
+  flex: 1;
+  display: flex;
+  border: 2px red;
+}
+
+.selectBar {
+  display: flex;
+  margin-left: 20px;
+  flex: 1;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+/*.navFlex .row:first-of-type {
+  flex-flow: wrap;
+}*/
+
+.navFlex .rowspan2 {
+  flex: 1 1 100%;
+}
+
+.navFlex .row div {
+  flex: 1;
+}
+.navFlex .column {
+  flex-wrap: column;
+}
+#chart-container {
+  font-family: Arial;
+  height: 83vh;
+  border: 6px #aaa;
+  border-radius: 5px;
+  overflow: auto;
+  text-align: center;
+  padding: 10px 10px 10px 10px;
+}
+#chart-container .orgchart > ul > li > ul li > .node::before {
+  height: 14px !important;
+}
+#chart-container .orgchart .node.matched {
+  background-color: rgba(238, 217, 54, 0.5);
+}
+#chart-container .orgchart .node {
+  width: 342px !important;
+}
+
+#chart-container .orgchart .node .content {
+  box-sizing: border-box;
+  padding: 2px;
+  height: 143px !important;
+  font-size: 0.75rem !important;
+  border: 2px solid rgba(217, 83, 79, 0.8) !important;
+  border-radius: 0 0 4px 4px;
+  text-align: left !important;
+  background-color: #2596be !important;
+  color: #fff !important;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+#chart-container .orgchart .node .title {
+  width: auto !important;
+  text-align: left !important;
+  font-size: 1rem !important;
+  height: 50px !important;
+}
+
+#chart-container .orgchart .node .title .symbol {
+  margin-right: 20px !important;
+  margin-top: 16px !important;
+  margin-left: 4px !important;
+}
+
+#chart-container .orgchart .node .content {
+  height: auto !important;
+}
+
+#chart-container .orgchart .employee .title {
+  background-color: #006699 !important;
+}
+
+#chart-container .orgchart .employee .content {
+  border-color: #006699 !important;
+}
+
+#chart-container .orgchart .contractor .title {
+  background-color: rgb(214, 142, 9) !important;
+}
+
+#chart-container .orgchart .contractor .content {
+  border-color: chocolate !important;
+  background-color: chocolate !important;
+}
+#chart-container .orgchart .vacant .title {
+  background-color: gray !important;
+}
+#chart-container .orgchart .vacant .content {
+  background-color: #9f9f9f !important;
+  border-color: #9f9f9f !important;
+}
+
+#chart-container .imgcircle {
+  float: right;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+#edit-panel {
+  text-align: center;
+  position: relative;
+  left: 10px;
+  width: calc(100% - 40px);
+  border-radius: 4px;
+  float: left;
+  margin-top: 10px;
+  padding: 10px;
+  color: #fff;
+  background-color: #449d44;
+}
+
+#edit-panel * {
+  font-size: 20px;
+}
+
+#github-link {
+  position: fixed;
+  top: 0px;
+  right: 10px;
+  font-size: 3em;
+}
+.abs100 {
+  position: absolute;
+  left: 200px;
+}
+.orgchart .second-menu-icon {
+  transition: opacity 0.5s;
+  opacity: 0;
+  right: -5px;
+  top: -5px;
+  z-index: 2;
+  position: absolute;
+}
+.orgchart .node:not(:only-child)::after {
+  height: 15px !important;
+}
+
+.orgchart .second-menu-icon::before {
+  background-color: rgba(68, 157, 68, 0.5);
+}
+.orgchart .second-menu-icon:hover::before {
+  background-color: #449d44;
+}
+.orgchart .node:hover .second-menu-icon {
+  opacity: 1;
+}
+.orgchart .node .second-menu {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: -70px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 1px #000;
+  background-color: #444;
+  z-index: 1;
+  border-radius: 10px;
+  float: left;
+  margin: 5px;
+  text-align: left;
+  padding: 5px;
+  color: whitesmoke;
+  font-family: sans-serif;
+}
+.logo {
+  position: relative;
+  z-index: 1;
+}
+
+.header {
+  position: absolute;
+  left: 110px;
+  z-index: 1;
+}
+
+[data-initials]:before {
+  color: white;
+  opacity: 1;
+  top: 12;
+  position: relative;
+  content: attr(data-initials);
+  display: inline-block;
+  /*font-weight: 800;*/
+  font-size: 24px;
+  font-family: sans-serif;
+  border-radius: 50%;
+  vertical-align: middle;
+  /*margin-right: 0.5em;*/
+  width: 48px;
+  height: 48px;
+  text-align: center;
+  line-height: 48px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  font-family: sans-serif;
+  justify-content: center;
+  margin: 0;
+}
+
+.site-card-border-less-wrapper {
+  padding: 30px;
+  background: #ececec;
+}
+.orgchart > ul > li > ul li > .leaf .node::before {
+  background-color: transparent !important;
+}
+
+ul.leaf {
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}

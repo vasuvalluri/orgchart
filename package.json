@@ -1,0 +1,38 @@
+{
+  "name": "orgchart",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "client": "cd client && npm run start",
+    "client-local": "cd client && set NODE_OPTIONS=--openssl-legacy-provider && npm run start-local",
+    "server": "node index.js",
+    "server-local": "nodemon index.js",
+    "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\"",
+    "dev-local": "concurrently --kill-others-on-fail \"npm run server-local\" \"npm run client-local\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@azure/msal-node": "^1.2.0",
+    "@microsoft/microsoft-graph-client": "^2.2.1",
+    "@types/react": "^17.0.14",
+    "@types/react-dom": "^17.0.9",
+    "axios": "^0.21.1",
+    "body-parser": "^1.19.0",
+    "circular-json": "^0.5.9",
+    "dotenv": "^10.0.0",
+    "express": "^4.16.4",
+    "file-saver": "^2.0.5",
+    "html-to-image": "^1.9.0",
+    "isomorphic-fetch": "^3.0.0",
+    "node-schedule": "^2.0.0",
+    "nodemon": "^2.0.15",
+    "oracledb": "^5.2.0",
+    "typescript": "^4.3.5",
+    "yarn": "^1.22.11"
+  },
+  "devDependencies": {
+    "concurrently": "^6.2.0"
+  }
+}
